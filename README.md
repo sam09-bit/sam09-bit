@@ -135,7 +135,6 @@
   <img alt="github-snake" src="https://raw.githubusercontent.com/sam09-bit/sam09-bit/output/github-snake-dark.svg" />
 </picture>
 
-> **To activate the snake:** Create `.github/workflows/snake.yml` in your profile repo (instructions below the README).
 
 ---
 
