@@ -1,3 +1,6 @@
+
+raw
+Readme · MD
 <!--
 ╔══════════════════════════════════════════════════════════════════════╗
 ║   SAMEER MORYA — GitHub Profile README                               ║
@@ -158,3 +161,44 @@
 ---
  
 ![footer](https://capsule-render.vercel.app/api?type=waving&color=0:0d0d0f,50:1a1820,100:0d0d0f&height=120&section=footer&text=Crafted%20with%20intention%20·%20Mumbai%2C%20India&fontSize=13&fontColor=38364a&fontAlignY=65&animation=twinkling)
+ 
+---
+ 
+<!--
+╔══════════════════════════════════════════════════════════════════════╗
+║   SNAKE SETUP — one-time, takes 3 minutes                            ║
+╠══════════════════════════════════════════════════════════════════════╣
+║                                                                      ║
+║  1. In this repo create:  .github/workflows/snake.yml               ║
+║                                                                      ║
+║  2. Paste into snake.yml:                                            ║
+║                                                                      ║
+║  name: Generate Snake Animation                                      ║
+║  on:                                                                 ║
+║    schedule:                                                         ║
+║      - cron: "0 0 * * *"                                             ║
+║    workflow_dispatch:                                                 ║
+║  jobs:                                                               ║
+║    generate:                                                         ║
+║      runs-on: ubuntu-latest                                          ║
+║      timeout-minutes: 5                                              ║
+║      steps:                                                          ║
+║        - uses: Platane/snk/svg-only@v3                               ║
+║          with:                                                       ║
+║            github_user_name: ${{ github.repository_owner }}         ║
+║            outputs: |                                                ║
+║              dist/github-snake.svg                                   ║
+║              dist/github-snake-dark.svg?palette=github-dark          ║
+║        - uses: crazy-max/ghaction-github-pages@v3.1.0               ║
+║          with:                                                       ║
+║            target_branch: output                                     ║
+║            build_dir: dist                                           ║
+║          env:                                                        ║
+║            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}                ║
+║                                                                      ║
+║  3. Settings → Actions → General → Read and write permissions        ║
+║  4. Actions tab → Run workflow manually once                         ║
+║  5. Snake appears. Updates itself every night.                       ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+-->
